@@ -73,19 +73,25 @@ function startCamera() {
 function draw() {
   background(0);
 
-  // if (cam.loadedmetadata) {
-  //   let scale = width / cam.width; // scale to canvas width
-  //   let camWidth = cam.width * scale;
-  //   let camHeight = cam.height * scale;
-  //   image(cam, width / 2, height / 2, camWidth, camHeight);
-  // }
-
   if (cam && cam.loadedmetadata) {
-    let scale = width / cam.width;
-    let camWidth = cam.width * scale;
-    let camHeight = cam.height * scale;
-    image(cam, width / 2, height / 2, camWidth, camHeight);
+    let camAspect = cam.width / cam.height;
+    let canvasAspect = width / height;
+
+    let drawWidth, drawHeight;
+
+    if (canvasAspect > camAspect) {
+        // Canvas is wider than camera → limit by height
+        drawHeight = height;
+        drawWidth = camAspect * drawHeight;
+    } else {
+        // Canvas is taller than camera → limit by width
+        drawWidth = width;
+        drawHeight = drawWidth / camAspect;
+    }
+
+    image(cam, width / 2, height / 2, drawWidth, drawHeight);
 }
+
 
   
   
