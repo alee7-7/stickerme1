@@ -1,1 +1,79 @@
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <!--imported google font-->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+    </style>
+    
+    <!--p5.js import script -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.11/addons/p5.sound.min.js"></script>
+    
+    <title>StickerMe!</title> 
+  </head>
+  
+  <body>
+    <main>
+      <!--intro-->
+      <div id="logo">
+        <img src="stickerme.png">
+      </div>
+      
+      <!--instructions-->
+      <div id="instructions" class="oxanium-a">
+        <h1 id="about">ABOUT</h1><br>
+        <p>
+          <i>StickerMe!</i> creatively visualizes personality traits <br> and frames the user with the cute characters.</p> <br><br><br>
+        
+        <h1 id="howto">HOW TO</h1><br>
+        <p> 
+          (1) Tap on the camera frame <br>
+          (2) Press the keys to create a custom personality frame <br>
+          (3) Click the <span id="pinktext"> pink</span> button to save your picture <br>
+          (4) Click the <span id="greentext"> green</span> button to undo <br>
+          (5) Click the <span id="bluetext"> blue</span> button to restart<br><br><br><br>
+        </p>
+        
+        <h1 id="description">
+          Describe yourself, <br> spell your name or a word, <br> or describe your friends!
+        </h1> <br><br><br>
+        
+      </div>  
+      
+      <!--added a start camera button for github -->
+      <button id="startCamera" class="oxanium-a">
+        <h1>Start!</h1>
+      </button>
+      <br><br><br><br><br><br><br>
+      
+      
+      <!--photobooth-->
+      <div id="container"></div>
+      
+      <div id="button">
+        
+        <button id="undoBtn">
+          <img id="undo" src="undo.png">
+        </button>
+        
+        <button id="saveBtn">
+          <img id="camera" src="camera.png"> 
+        </button>
+        
+        <button id="clearBtn">
+          <img id="restart" src="restart.png">
+        </button>
+        
+      </div>
+      
+     
+      
+      
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>

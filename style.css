@@ -1,0 +1,138 @@
+*{
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* <weight>: Use a value from 200 to 800 */
+.oxanium-a {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+main {
+  background-color: black;
+}
+
+
+/* intro */
+#logo{
+  height: 100%;
+}
+
+#logo img{
+  display: block;
+  padding: 18% 0 20% 0;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+/* instructions */
+#instructions{
+  color: white;
+  text-align: center; 
+}
+
+#about{
+  color: #ed4899;
+}
+
+#howto{
+  color: #7dc142;
+}
+
+#description{
+  color: #59a1d8;
+}
+
+#pinktext{
+  color: #ed4899;
+}
+#greentext{
+  color: #7dc142;
+}
+#bluetext{
+  color: #59a1d8;
+}
+
+/* start camera button */
+#startCamera{
+  display: block;
+  outline: none;
+  border: none;
+  border-radius: 10%;
+}
+
+
+
+
+/* photobooth */
+#container{
+  display: flex;
+  justify-content: center;
+}
+
+canvas{
+  width: 90%;
+  height: auto;  
+  display: block;
+}
+
+#button {
+  display: flex;          
+  justify-content: center; 
+  gap: 7px;               
+  padding-bottom: 3%;
+}
+
+#camera{
+  width: 80%;
+  height: auto;
+  margin: 8% 0;
+}
+
+#saveBtn{
+  display: block;
+  background-color: #ed4899;
+  outline: none;
+  border: none;
+  border-radius: 25%;
+  width: 7%;
+  height: auto;
+  margin-top: 2%;
+}
+
+#restart{
+  width: 80%;
+  height: auto;
+}
+
+#clearBtn{
+  display: block;
+  background-color: #59a1d8;
+  outline: none;
+  border: none;
+  border-radius: 25%;
+  width: 7%;
+  height: auto;
+  margin-top: 2%;
+}
+
+#undo{
+  width: 80%;
+  height: auto;
+}
+
+#undoBtn{
+  display: block;
+  background-color: #7dc142;
+  outline: none;
+  border: none;
+  border-radius: 25%;
+  width: 7%;
+  height: auto;
+  margin-top: 2%;
+}
