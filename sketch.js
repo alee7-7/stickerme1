@@ -25,6 +25,7 @@ function preload() {
     //correlating each letter to its respective png into imgs object
   }
 }
+//s
 
 
 //logic from chatGPT --- setting up canvas with camera//
