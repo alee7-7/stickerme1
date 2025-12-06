@@ -21,7 +21,7 @@ function preload() {
   // ASCII codes for uppercase letters
     let letter = String.fromCharCode(c); 
     // converting letter to string into letter variable 
-    imgs[letter] = loadImage(`Image/${letter}.png`); 
+    imgs[letter] = loadImage(`${letter}.png`); 
     //correlating each letter to its respective png into imgs object
   }
 }
