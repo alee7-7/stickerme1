@@ -62,6 +62,7 @@ function startCamera() {
       console.log("Camera started!");
     });
     // cam.size(800, 450);
+    cam.id("myCam");
     cam.hide();
   }
 }
