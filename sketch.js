@@ -30,8 +30,8 @@ function preload() {
 //logic from chatGPT --- setting up canvas with camera//
 function setup() {
   // determining canvas size & making div container its parent // 
-  // let canvasWidth = 800;
-  // let canvasHeight = 450;
+  let canvasWidth = 800;
+  let canvasHeight = 450;
 
   let canvas = createCanvas(canvasWidth, canvasHeight);
   canvas.parent("container");
