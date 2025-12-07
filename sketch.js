@@ -73,7 +73,9 @@ function startCamera() {
 function draw() {
   background(0);
 
-  if (cam && cam.loadedmetadata) {
+  // if (cam && cam.loadedmetadata) {
+  if (cam && cam.width > 0) {
+
     let camAspect = cam.width / cam.height;
     let canvasAspect = width / height;
 
