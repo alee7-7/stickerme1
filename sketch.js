@@ -75,25 +75,25 @@ function draw() {
   background(0);
 
   // if (cam && cam.loadedmetadata) {
-  if (cam && cam.width > 0) {
-
+ if (cam && cam.width > 0) {
     let camAspect = cam.width / cam.height;
     let canvasAspect = width / height;
 
     let drawWidth, drawHeight;
 
     if (canvasAspect > camAspect) {
-        // Canvas is wider than camera → limit by height
-        drawHeight = height;
-        drawWidth = camAspect * drawHeight;
-    } else {
-        // Canvas is taller than camera → limit by width
+        // Canvas is wider than camera → fill width, crop top/bottom
         drawWidth = width;
-        drawHeight = drawWidth / camAspect;
+        drawHeight = width / camAspect;
+    } else {
+        // Canvas is taller than camera → fill height, crop sides
+        drawHeight = height;
+        drawWidth = camAspect * height;
     }
 
     image(cam, width / 2, height / 2, drawWidth, drawHeight);
 }
+
 
 
   
