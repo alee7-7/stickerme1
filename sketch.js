@@ -30,8 +30,8 @@ function preload() {
 //logic from chatGPT --- setting up canvas with camera//
 function setup() {
   // determining canvas size & making div container its parent // 
-  let canvasWidth = 800;
-  let canvasHeight = 450;
+  // let canvasWidth = 800;
+  // let canvasHeight = 450;
 
   let canvas = createCanvas(canvasWidth, canvasHeight);
   canvas.parent("container");
@@ -61,7 +61,7 @@ function startCamera() {
     cam = createCapture(VIDEO, () => {
       console.log("Camera started!");
     });
-    cam.size(800, 450);
+    // cam.size(800, 450);
     cam.hide();
   }
 }
@@ -162,9 +162,9 @@ function keyTyped() {
 }
 
 // making canvas responsive
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight);
+// }
 
 //logic from chatGPT --- clearing the object letters to clear the frame//
 let clearBtn = document.getElementById("clearBtn");
